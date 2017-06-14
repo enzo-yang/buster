@@ -14,7 +14,7 @@
     </a>
     <div class="card-content">
         <div class="post-summary">
-            <p class="post-excerpt">{{{ extract }}}</p>
+            <p class="post-excerpt">{{#if meta_description}}{{meta_description}}{{else}}{{excerpt words="50"}}{{/if}}</p>
         </div>
         {{#if tags}}
         <div class="post-footer-wrapper">
